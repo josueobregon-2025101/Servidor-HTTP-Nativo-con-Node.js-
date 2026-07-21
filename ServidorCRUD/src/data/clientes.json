@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "nombre": "Juan",
+        "apellido": "Pérez",
+        "correo": "juan.perez@gmail.com",
+        "telefono": 55512345,
+        "direccion": "Zona 1, Ciudad de Guatemala",
+        "estado": "activo"
+    },
+    {
+        "id": 2,
+        "nombre": "María",
+        "apellido": "López",
+        "correo": "maria.lopez@gmail.com",
+        "telefono": 55523456,
+        "direccion": "Zona 5, Ciudad de Guatemala",
+        "estado": "activo"
+    },
+    {
+        "id": 3,
+        "nombre": "Carlos",
+        "apellido": "Gómez",
+        "correo": "carlos.gomez@gmail.com",
+        "telefono": 55534567,
+        "direccion": "Mixco, Guatemala",
+        "estado": "inactivo"
+    },
+    {
+        "id": 4,
+        "nombre": "Ana",
+        "apellido": "Martínez",
+        "correo": "ana.martinez@gmail.com",
+        "telefono": 55545678,
+        "direccion": "Villa Nueva, Guatemala",
+        "estado": "activo"
+    },
+    {
+        "id": 5,
+        "nombre": "Luis",
+        "apellido": "Ramírez",
+        "correo": "luis.ramirez@gmail.com",
+        "telefono": 55556789,
+        "direccion": "Amatitlán, Guatemala",
+        "estado": "activo"
+    },
+    {
+        "id": 6,
+        "nombre": "Sofía",
+        "apellido": "Hernández",
+        "correo": "sofia.hernandez@gmail.com",
+        "telefono": 55567890,
+        "direccion": "Zona 10, Ciudad de Guatemala",
+        "estado": "inactivo"
+    },
+    {
+        "id": 7,
+        "nombre": "Pedro",
+        "apellido": "Castillo",
+        "correo": "pedro.castillo@gmail.com",
+        "telefono": 55578901,
+        "direccion": "San Miguel Petapa, Guatemala",
+        "estado": "activo"
+    },
+    {
+        "id": 8,
+        "nombre": "Lucía",
+        "apellido": "Morales",
+        "correo": "lucia.morales@gmail.com",
+        "telefono": 55589012,
+        "direccion": "Villa Canales, Guatemala",
+        "estado": "activo"
+    },
+    {
+        "id": 9,
+        "nombre": "José",
+        "apellido": "Flores",
+        "correo": "jose.flores@gmail.com",
+        "telefono": 55590123,
+        "direccion": "Zona 18, Ciudad de Guatemala",
+        "estado": "inactivo"
+    },
+    {
+        "id": 10,
+        "nombre": "Gabriela",
+        "apellido": "Reyes",
+        "correo": "gabriela.reyes@gmail.com",
+        "telefono": 55501234,
+        "direccion": "Fraijanes, Guatemala",
+        "estado": "activo"
+    }
+]
