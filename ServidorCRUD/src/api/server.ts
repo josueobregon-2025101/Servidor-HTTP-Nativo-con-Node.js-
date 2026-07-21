@@ -1,5 +1,5 @@
 import { createServer } from "http";
-import { productosRouter } from "../routes/productosRouter";
+import { productoRouter } from "../routes/productosRouter";
 import { clienteRouter} from "../routes/clientesRouter";
 
 
@@ -7,6 +7,7 @@ export function iniciarServidor(){
     const servidor = createServer(async (req,res)=>{
 
         if (await clienteRouter(req, res)) return;
+        if (await productoRouter(req,res)) return;
         res.writeHead(404, {
             "Content-Type": "application/json"
         });
