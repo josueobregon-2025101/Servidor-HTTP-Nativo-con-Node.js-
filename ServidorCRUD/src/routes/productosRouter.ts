@@ -32,6 +32,19 @@ export async function productoRouter(req:IncomingMessage, res:ServerResponse):Pr
             res.end(JSON.stringify(producto));
             return true;
         }
+        //DELETE
+        else if(method ==="DELETE" && url.startsWith("/clientes/")){
+            const id = Number(url.split("/")[2]);
+            const cliente = await service.eliminar(id);
+            if(!cliente === true){
+                res.writeHead(404);
+                res.end(JSON.stringify({mensaje:"cliente no encontrado"}));
+                return true;
+            }else
+            res.writeHead(200);
+            res.end(JSON.stringify(cliente));
+            return true;
+        }
 
         res.writeHead(404);
         res.end(JSON.stringify({
