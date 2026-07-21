@@ -7,7 +7,9 @@ export async function clienteRouter(req:IncomingMessage, res:ServerResponse):Pro
     res.setHeader("Content-Type","application/json");
     const url = req.url ?? "";
     const method = req.method ?? "";
-
+    if (!url.startsWith("/clientes")) {
+        return false;
+    }
     try {
         //GET
         if(method === "GET" && url === "/clientes"){
@@ -21,7 +23,7 @@ export async function clienteRouter(req:IncomingMessage, res:ServerResponse):Pro
 
             const id = Number(url.split("/")[2]);
             const cliente = await service.buscar(id);
-            if(!cliente){
+            if(!cliente === true){
                 res.writeHead(404);
                 res.end(JSON.stringify({mensaje:"cliente no encontrado"}));
                 return true;
@@ -30,17 +32,30 @@ export async function clienteRouter(req:IncomingMessage, res:ServerResponse):Pro
             res.end(JSON.stringify(cliente));
             return true;
         }
+        //DELETE
+        else if(method ==="DELETE" && url.startsWith("/clientes/")){
+            const id = Number(url.split("/")[2]);
+            const cliente = await service.eliminar(id);
+            if(!cliente === true){
+                res.writeHead(404);
+                res.end(JSON.stringify({mensaje:"cliente no encontrado"}));
+                return true;
+            }else
+            res.writeHead(200);
+            res.end(JSON.stringify({mensaje:"cliente eliminado"}));
+            return true;
+        }
 
         res.writeHead(404);
         res.end(JSON.stringify({
             mensaje: "Ruta no encontrada"
         }));
-        return false;
+        return true;
     } catch (error) {
         res.writeHead(500);
         res.end(JSON.stringify({
             mensaje: "Error interno del servidor"
         }));
-        return false;
+        return true;
     }
 }
