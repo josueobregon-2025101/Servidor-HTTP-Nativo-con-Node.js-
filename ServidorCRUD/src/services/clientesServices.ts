@@ -11,6 +11,11 @@ export class ClienteService{
 
     async agregarCliente(cliente:Cliente):Promise<void>{
         try {
+            const existe = await this.buscar(cliente.id);
+
+        if (existe) {
+            throw new Error("El cliente ya existe");
+        }
             const clientesData = await this.repository.obtenerClientes();
             clientesData.push(cliente);
             await this.repository.guardarClientes(clientesData);
@@ -21,12 +26,12 @@ export class ClienteService{
         }
     }
 
-    async buscar(id:number):Promise<Cliente|undefined>{
+    async buscar(id:number):Promise<Cliente|null>{
         try {
             const  clientesData = await this.repository.obtenerClientes();
             const cliente = clientesData.find(u => u.id === id);
             if(!cliente){
-                throw new Error("Cliente no encontrado");
+                return null;
             }
             return cliente;
         } catch (error) {
