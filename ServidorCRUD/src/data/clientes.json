@@ -1,12 +1,12 @@
 [
     {
-        "id": 1,
-        "nombre": "Juan",
-        "apellido": "Pérez",
-        "correo": "juan.perez@gmail.com",
-        "telefono": 55512345,
-        "direccion": "Zona 1, Ciudad de Guatemala",
-        "estado": "activo"
+        "nombre": "jose",
+        "apellido": "joaquin",
+        "correo": "jojo.perez@gmail.com",
+        "telefono": 11223334444,
+        "direccion": "Zona 18, Ciudad de Guatemala",
+        "estado": "inactivo",
+        "id": 1
     },
     {
         "id": 2,
