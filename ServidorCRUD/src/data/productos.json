@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "nombre": "Laptop Lenovo ThinkPad E14",
+    "descripcion": "Laptop Intel Core i5, 16GB RAM, SSD 512GB",
+    "precio": 850.50,
+    "stock": 12,
+    "categoria": "Computadoras",
+    "estado": "Activo"
+  },
+  {
+    "id": 2,
+    "nombre": "Mouse Logitech M185",
+    "descripcion": "Mouse inalámbrico USB",
+    "precio": 18.99,
+    "stock": 50,
+    "categoria": "Accesorios",
+    "estado": "Activo"
+  },
+  {
+    "id": 3,
+    "nombre": "Teclado Mecánico Redragon K552",
+    "descripcion": "Teclado mecánico RGB con switches azules",
+    "precio": 65.75,
+    "stock": 20,
+    "categoria": "Accesorios",
+    "estado": "Activo"
+  },
+  {
+    "id": 4,
+    "nombre": "Monitor Samsung 24\"",
+    "descripcion": "Monitor Full HD de 24 pulgadas",
+    "precio": 179.99,
+    "stock": 8,
+    "categoria": "Monitores",
+    "estado": "Activo"
+  },
+  {
+    "id": 5,
+    "nombre": "Disco SSD Kingston 1TB",
+    "descripcion": "Unidad de estado sólido SATA III",
+    "precio": 92.30,
+    "stock": 30,
+    "categoria": "Almacenamiento",
+    "estado": "Activo"
+  },
+  {
+    "id": 6,
+    "nombre": "Memoria RAM Corsair 16GB",
+    "descripcion": "DDR4 3200MHz",
+    "precio": 58.40,
+    "stock": 25,
+    "categoria": "Componentes",
+    "estado": "Activo"
+  },
+  {
+    "id": 7,
+    "nombre": "Impresora HP LaserJet",
+    "descripcion": "Impresora láser monocromática",
+    "precio": 215.00,
+    "stock": 6,
+    "categoria": "Impresoras",
+    "estado": "Activo"
+  },
+  {
+    "id": 8,
+    "nombre": "Webcam Logitech C920",
+    "descripcion": "Cámara web Full HD 1080p",
+    "precio": 79.90,
+    "stock": 18,
+    "categoria": "Accesorios",
+    "estado": "Activo"
+  },
+  {
+    "id": 9,
+    "nombre": "Router TP-Link Archer C6",
+    "descripcion": "Router Wi-Fi AC1200 de doble banda",
+    "precio": 54.25,
+    "stock": 15,
+    "categoria": "Redes",
+    "estado": "Activo"
+  },
+  {
+    "id": 10,
+    "nombre": "UPS Forza 1000VA",
+    "descripcion": "Sistema de alimentación ininterrumpida",
+    "precio": 120.00,
+    "stock": 10,
+    "categoria": "Energía",
+    "estado": "Activo"
+  }
+]
